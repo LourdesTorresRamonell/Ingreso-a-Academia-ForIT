@@ -25,25 +25,29 @@
     |    |-server.js
     |
     |_frontend  
-         |-src
-         |   |-components
-         |   |    |-TareaForm.jsx
-         |   |    |-TareaItem.jsx
-         |   |    |-TareaList.jsx
-         |   |-App.jsx
-         |   |-index.css
-         |   |_main.jsx
-         |
-         |-.env
+    |    |-src
+    |    |   |-components
+    |    |   |    |-TareaForm.jsx
+    |    |   |    |-TareaItem.jsx
+    |    |   |    |-TareaList.jsx
+    |    |   |-App.jsx
+    |    |   |-index.css
+    |    |   |_main.jsx
+    |    |
+    |    |-.env
+    |    |-package.json
+    |
+    |-README.md
+    |_capturas
 
 
 ## 📷 Capturas de Pantalla
 
         📌 Pantalla principal
-            ![Pantalla principal](./capturas/Pantalla.png)
+![Pantalla principal](./capturas/Pantalla.png)
 
         📌 Listado de tareas
-            ![Listado de tareas vario](./capturas/Lista.png)
+![Listado de tareas vario](./capturas/Lista.png)
 
 
 
