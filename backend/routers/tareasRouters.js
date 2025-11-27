@@ -1,10 +1,11 @@
-const express=require(`express`);
-const { listarTareas, crearTares, actualizarTareas, borrarTareas }=require(`./controllers/tareasController.js`);
+import express from "express"
+import {listarTereas, crearTarea, actualizarTarea, borrarTarea } from "../controllers/tareasController.js"
+
 const router=express.Router()
 
-router.get(`/`, listarTareas);
-router.post(`/`, crearTares);
-router.put(`/:id`, actualizarTareas);
-router.delete(`/:id`, borrarTareas);
+router.get(`/`, listarTereas);
+router.post(`/`, crearTarea);
+router.put(`/:id`, actualizarTarea);
+router.delete(`/:id`, borrarTarea);
 
-export default router;
+export default router

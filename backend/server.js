@@ -1,18 +1,21 @@
-const express=require("express"); //importamos el express para poder utilizarlo
-const { controller }=require("./controllers/tareasController");
-const { router }=require("./routers");
+import express from "express";
+import cors from "cors"
+import dotenv from "dotenv"
+import router from "./routers/tareasRouters.js"
+
+dotenv.config()
 
 const app=express();
-const port=5000;
+const port=process.env.PORT || 5000;
 
 app.use(cors());
 app.use(express.json());
 
 app.get("/", (req, res)=>{
-    res.send("Bienvenido a la app");
+    res.send({menssage: "Bienvenido a la app"});
 });
 
-app.use(`/api/task`, router);
+app.use(`/tarea`, router);
 
 app.listen(port, ()=>{
     console.log(`Servidor escuchando al puerto ${port}`);
